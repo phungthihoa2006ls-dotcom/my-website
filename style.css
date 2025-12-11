@@ -1,0 +1,162 @@
+header 
+    {background-color: #FF0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;}
+main 
+    {background-color: #FFFACD;
+    padding: 20px;}
+footer 
+    {background-color: #006400;
+    color: #FFF5E1;
+    text-align: center;
+    padding: 10px;}
+/* Khai báo CSS sử dụng các bộ chọn lớp cho các thành phần của nội dung */
+.tieu-de-bai-viet 
+    {font-size: 18px;
+    font-weight: bold;}
+.ten-tac-gia 
+    {font-size: 14px;
+    font-style: italic;}
+/* Khai báo CSS xác định vị trí hiển thị cho các phần tử HTML */
+.hinh-anh 
+    {float: left;
+    margin-right: 10px;}
+.video-clip 
+    {display: block;
+    margin: 10px auto;}
+/* Thiết lập được định dạng CSS màu nền, màu chữ, phông chữ, cỡ chữ, đường viền cho các thành phần nội dung */
+.bai-viet 
+    {background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;}
+.goc-anh 
+    {background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;}
+.goc-am-nhac-video 
+    {background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;}
+.goc-binh-luan {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;}
+/* 🌸 Menu điều hướng */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;}
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* 📸 Hiệu ứng ảnh */
+.goc-anh img {
+    border: 3px solid #FF4500;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.goc-anh img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.6);
+}
+/* 🎶 Liên kết âm nhạc & video */
+.goc-am-nhac-video a {
+    color: #B22222;
+    font-weight: bold;
+    text-decoration: none;
+}
+.goc-am-nhac-video a:hover {
+    text-decoration: underline;
+    color: #FF6347;
+}
+
+/* 💬 Form bình luận */
+form {background: #FFF8DC;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #B22222;
+}
+
+/* 🌸 Hoa đào rơi */
+@keyframes petals {
+    0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(600px) rotate(360deg); opacity: 0; }
+}
+.petals {
+    position: fixed;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border-radius: 50%;
+    animation: petals 10s linear infinite;
+    z-index: 999;
+}
+/* 🎆 Pháo hoa */
+.firework {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: explode 1s ease-out forwards;
+}
+@keyframes explode {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(3); opacity: 0; }
+}
+.lantern::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background: black;
+  transform: translateX(-50%);}
+.lantern::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 4px;
+  height: 15px;
+  background: gold;
+  transform: translateX(-50%);
+}
+@keyframes swing {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
